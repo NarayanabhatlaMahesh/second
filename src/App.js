@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import Card from '@mui/material/Card';
 import './App.css';
 
+function SomeLines(one){
+  return(
+    <>
+    <input />
+    </>
+  )
+}
+
 function App() {
+  const text = "existential crisis is happier now a days";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SomeLines one={6} two={2} />
+      <Card> {text} </Card>
     </div>
   );
 }
